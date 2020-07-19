@@ -1,0 +1,13 @@
+@import "../modularscale";
+
+$modularscale: (
+  base: 1em,
+  ratio: $major-third 
+);
+
+.banner-hero__title {
+    font-size:ms(4);
+}
+.banner-hero__subtitle {
+    font-size:ms(2)
+}

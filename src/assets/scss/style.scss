@@ -1,9 +1,11 @@
 /* IMPORT YOUR SCSS FILES HERE*/
 @import "normalize.css";
+
 /* GLOBALS */
 @import "base/globals";
 @import "base/variables";
 @import "base/mixins";
+@import "base/typo";
 /*  Mobile First CSS Rules as Default */
 @import "mobile-default";
 
