@@ -6,20 +6,16 @@ var gulp = require('gulp'),
  sass = require('gulp-sass'),
  browserSync = require('browser-sync').create();
 
-gulp.task('default', async function(){
-    console.log("Horray, gulp is working"); 
-});
-gulp.task('html',function(){
-    return gulp.src('./index.html')
-    .pipe(gulp.dest('./dist'));
-    
-});
-
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('styles',function(){
     return gulp.src("./src/assets/scss/style.scss")
         .pipe(sass())
         .pipe(postcss([cssImport, autoprefixer]))
+        .on('error', async function(errorInfo) {
+            console.log(errorInfo.toString());
+            this.emit('end');
+
+        })
         .pipe(gulp.dest('./dist'))
         .pipe(browserSync.stream());
 });
