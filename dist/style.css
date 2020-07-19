@@ -293,6 +293,28 @@ body {
 img {
   width: 100%;
   height: auto; }
+.gutter {
+  padding-left: 18px;
+  padding-right: 18px; }
+.gutter--top {
+    padding-top: 30px; }
+.gutter--bottom {
+    padding-bottom: 30px; }
+.banner-hero__title {
+  font-size: 2.44141em; }
+.banner-hero__subtitle {
+  font-size: 1.5625em; }
+.wrapper-content {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+/*
+BANNER HERO
+*/
+.banner-hero__text-container {
+  margin: 2rem 0 0 0; }
+.banner-hero__message {
+  text-align: center; }
 .banner-hero__title {
   font-size: 2.44141em; }
 .banner-hero__subtitle {

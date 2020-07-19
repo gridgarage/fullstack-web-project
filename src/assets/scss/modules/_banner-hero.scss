@@ -1,3 +1,20 @@
 /*
 BANNER HERO
 */
+
+.banner-hero{
+    &__text-container {
+    
+        margin:2rem 0 0 0;
+    }
+&__message {
+    text-align: center;
+}
+    }
+
+    .banner-hero__title {
+        font-size:ms(4);
+    }
+    .banner-hero__subtitle {
+        font-size:ms(2)
+    }

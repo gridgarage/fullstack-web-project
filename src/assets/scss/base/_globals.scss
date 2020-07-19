@@ -18,3 +18,16 @@ img {
     width: 100%;
     height: auto;
 }
+
+.gutter{
+    padding-left: 18px;
+    padding-right: 18px;
+
+    &--top {
+        padding-top: 30px;
+    }
+    &--bottom {
+        padding-bottom: 30px;
+    }
+}
+
