@@ -276,6 +276,9 @@ template {
   display: none;
 }
 /* GLOBALS */
+/*
+GLOBAL CSS RULES
+*/
 html {
   -webkit-text-size-adjust: 100%;
      -moz-text-size-adjust: 100%;
@@ -297,7 +300,14 @@ MEDIA QUERIES FOR MOBILES AND DEFAULT
 body {
   background-color: cadetblue; }
 h1 {
-  text-align: center; }
+  text-align: center;
+  color: lightgoldenrodyellow;
+  font-size: 2rem;
+  margin: 1rem 0 0 0; }
+h2 {
+  font-weight: 300;
+  text-align: center;
+  margin: 0; }
 @media only screen and (min-width: 35em) {
   /*
 MEDIA QUERIES FOR TABLETS 
