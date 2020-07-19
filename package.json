@@ -1,7 +1,7 @@
 {
   "name": "fullstack",
   "version": "1.0.0",
-  "description": "Nodejs - Git - Webpack 4 - JS - HTML5 - CSS - SCSS",
+  "description": "Nodejs - Git - Gulp - JS - HTML5 - CSS - SCSS",
   "main": "index.js",
   "scripts": {
     "watch": "gulp watch"
