@@ -17,7 +17,7 @@ gulp.task('html',function(){
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('styles',function(){
-    return gulp.src('./src/assets/scss/style.scss')
+    return gulp.src("./src/assets/scss/style.scss")
         .pipe(sass())
         .pipe(postcss([cssImport, autoprefixer]))
         .pipe(gulp.dest('./dist'))
@@ -32,14 +32,12 @@ gulp.task('watch',function (){
             baseDir:"./"
         }
     });
-      watch ('./index.html', function (){
-         browserSync.reload();
-      });
-      watch ('./*.html', gulp.series ('html'));
-      watch('./src/assets/scss/*.scss', gulp.series('styles'));
+      watch ("./*.html").on('change', browserSync.reload);
+     
+     /*  watch ('./*.html', gulp.series ('html')); */
+      watch("./src/assets/scss/*.scss", gulp.series('styles'));
     
     });
-
 
 
 
