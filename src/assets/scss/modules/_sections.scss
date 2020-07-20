@@ -1,0 +1,23 @@
+.section {
+    margin-top: 0;
+    text-align: center;
+
+    &--light {
+        background-color: rgb(245, 245, 245);
+    }
+
+    &__title {
+        font-size: ms(4);
+        margin: .25rem;
+       
+        font-weight: 300;
+        color: darken($primaryColor,20%);
+
+    }
+    &__subtitle {
+        text-align: center;
+        margin:0 auto;
+      
+        font-weight:300;
+    }
+}
