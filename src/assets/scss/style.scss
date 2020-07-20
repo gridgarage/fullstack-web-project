@@ -2,12 +2,18 @@
 @import "normalize.css";
 
 /* GLOBALS */
-@import "base/globals";
+
 @import "base/variables";
 @import "base/mixins";
+@import "modularscale";
+@import "base/globals";
 @import "base/typo";
 @import "modules/wrapper";
 @import "modules/banner-hero";
+@import "modules/sections";
+@import "modules/cards";    
+@import "modules/portafolio";
+
 /*  Mobile First CSS Rules as Default */
 @import "mobile-default";
 

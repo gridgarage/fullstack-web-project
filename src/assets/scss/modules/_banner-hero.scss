@@ -3,18 +3,59 @@ BANNER HERO
 */
 
 .banner-hero{
-    &__text-container {
-    
-        margin:2rem 0 0 0;
-    }
-&__message {
-    text-align: center;
-}
-    }
+    background-color:$primaryColor;//#F0910F;// #0E569E;//#17294F;// #0B62A9;
+    padding: .25rem .2rem 1.5rem .2rem;
+    min-width: 320px;
+    border-bottom: 10px solid darken($primaryColor,20%);
 
-    .banner-hero__title {
-        font-size:ms(4);
+
+    &__text-container {
+      max-width: 450px;
+      margin: 0 auto;
+      text-align: center;
+   
+      @include for-phone-only {
+          min-width: 320px;
+          padding: 18px 10px 0 10px;
+      }
     }
-    .banner-hero__subtitle {
-        font-size:ms(2)
+    &__title {
+        color:darken($primaryColor,20%);
+        font-size:ms(6);
+        font-weight:400;
+        margin-top: 2rem;
+        margin-bottom: .25rem;
+ 
     }
+    &__subtitle {
+        margin: 0;
+        font-family: $specialFont;
+        color: whitesmoke;
+        font-size:ms(3);
+        font-weight:400;
+        letter-spacing: 1px;
+
+        @include for-phone-only {
+            font-size: ms(3);
+       }
+
+    }
+    &__message {
+        margin-top: 0.5rem;
+        margin-bottom:1.25rem;
+        text-align: center;
+        font-weight: 300;
+        font-size: ms(1);
+        color: $text-dark;
+        letter-spacing: 1px;
+        text-shadow: 2px 0px 0px rgba(0, 0, 0, 0.1);
+
+        @include for-phone-only {
+            font-size: ms(0);
+            
+       }
+
+ }
+
+
+}

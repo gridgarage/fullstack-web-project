@@ -1,13 +1,11 @@
-@import "../modularscale";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
+$specialFont: "Raleway", sans-serif;
 $modularscale: (
   base: 1em,
-  ratio: $major-third 
+  ratio: $minor-third 
 );
 
-.banner-hero__title {
-    font-size:ms(4);
-}
-.banner-hero__subtitle {
-    font-size:ms(2)
+.text-bold{
+  font-weight: 400;
 }
